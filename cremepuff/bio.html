@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>bio</title>
+        <link rel="stylesheet" type="text/css" href="style/biostyle.css">
+</head>
+<html lang="en">
+    <body>
+        <a href="index.html" class="return">(return)</a>
+        <div class="div-1">The CremePuff Bio()</div>
+        <button class="start" onclick="typeWriter()">press()</button>
+        <p id="start"></p>
+        <script>
+
+        var i = 0;
+        var txt = 'Welcome to CremePuff Tech. Located in the confines of New York City. The CremePuff serves your every imaginable tech need from full stack web development to programming and design()';
+        var speed = 90;
+
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("start").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+        }
+        </script>
+    </body>
+</html>
+
+
+
+
+
