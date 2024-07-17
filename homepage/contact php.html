@@ -1,0 +1,12 @@
+<?php
+if(isset($_POST['submit'])){
+
+	$to = $_POST['email'];
+	$subject = "Your subject";
+	$txt = "Hello world!";
+	$headers = "From: name@yourside.com" . "\r\n" .
+	"CC: somebodyelse@yourside.com";
+	mail($to,$subject,$txt,$headers);
+}
+
+?> 
